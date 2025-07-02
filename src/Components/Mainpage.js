@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Mealcards from './Mealcards'
 
 const Mainpage = () => {
     const [data, setData] = useState()
@@ -30,7 +31,9 @@ const Mainpage = () => {
                 </button>
             </div>
 
-            <div></div>
+            <div>
+                <Mealcards detail={data}/>
+            </div>
         </div>
     )
 }
