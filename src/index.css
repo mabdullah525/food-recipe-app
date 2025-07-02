@@ -5,3 +5,12 @@
 body{
     font-family: "Ubuntu", sans-serif;
 }
+.search-bar{
+    @apply flex items-center justify-center gap-4 mt-6;
+}
+.input{
+    @apply w-[400px] p-3 text-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white rounded-lg shadow-sm transition-all duration-200;
+} 
+.search-btn{
+    @apply w-28 px-4 py-3 bg-orange-500 hover:bg-orange-600 font-medium text-white text-lg rounded-lg shadow-md transition-all duration-200;
+}
