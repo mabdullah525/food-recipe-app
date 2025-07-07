@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Mealcards = ({ detail }) => {
   console.log(detail)
@@ -14,9 +15,12 @@ const Mealcards = ({ detail }) => {
                 className="inner-img"
               />
               <p className="meal-p">{curItem.strMeal}</p>
-              <button className="meal-btn">
-                Recipe
-              </button>
+              <NavLink to={`/${curItem.idMeal}`} className="meal-link">
+                <button className="meal-btn">
+                  Recipe
+                </button>
+              </NavLink>
+
             </div>
           )
         })
