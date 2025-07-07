@@ -29,3 +29,6 @@ body{
 .inner-img{
     @apply w-full h-[16rem] object-cover rounded-lg mb-4;
 }
+.head{
+    @apply text-4xl sm:text-5xl font-extrabold text-orange-500 text-center mt-8 mb-6 tracking-wide drop-shadow-md;
+}

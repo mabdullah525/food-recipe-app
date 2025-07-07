@@ -25,8 +25,9 @@ const Mainpage = () => {
 
   return (
     <>
-      <h1 className='head'>FOOD RECIPE APP</h1>
-      <div className='container px-3'>
+      <h1 className="head container mx-auto">🍽️ FOOD RECIPE APP</h1>
+
+      <div className='container mx-auto px-4 py-8'>
         <div className='search-bar'>
           <input
             type="text"
