@@ -11,7 +11,7 @@ const Mealcards = ({ detail }) => {
               <img
                 src={curItem.strMealThumb}
                 alt={curItem.strMeal}
-                className="w-full h-48 object-cover rounded-lg mb-4"
+                className="inner-img"
               />
               <p className="meal-p">{curItem.strMeal}</p>
               <button className="meal-btn">

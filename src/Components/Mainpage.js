@@ -17,7 +17,7 @@ const Mainpage = () => {
   }
 
   return (
-    <div className='container'>
+    <div className='container px-3'>
       <div className='search-bar'>
         <input
           type="text"
