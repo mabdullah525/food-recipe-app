@@ -17,7 +17,8 @@ const Mainpage = () => {
       const get = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
       const jsonData = await get.json()
       // console.log(jsonData)
-      setData(jsonData.meals || [])
+      setData(jsonData.meals)
+      setMsg('')
 
     }
 
@@ -41,8 +42,8 @@ const Mainpage = () => {
           >
             Search
           </button>
-          <h4>{msg}</h4>
         </div>
+        <h4 className='text-center mt-5'>{msg}</h4>
 
         <div>
           <Mealcards detail={data} />

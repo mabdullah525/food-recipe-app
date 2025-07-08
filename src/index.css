@@ -32,3 +32,15 @@ body{
 .head{
     @apply text-4xl sm:text-5xl font-extrabold text-orange-500 text-center mt-8 mb-6 tracking-wide drop-shadow-md;
 }
+.not-found{
+    @apply text-center text-gray-500 text-xl mt-10;
+}
+.mealinfo{
+    @apply max-w-6xl mx-auto p-6 flex flex-col md:flex-row gap-8 items-start bg-white rounded-lg shadow-lg mt-10;
+}
+.info-img{
+    @apply w-full md:w-[400px] h-auto rounded-lg shadow-md object-cover;
+}
+.info-btn{
+    @apply bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-md mb-6;
+}

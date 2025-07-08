@@ -21,20 +21,32 @@ const Mealinfo = () => {
     }, [mealid]);
 
     return (
-        !info ? (
-            <div>Data Not Found</div>
-        ) : (
-            <div className='mealinfo'>
-                <img src={info.strMealThumb} alt={info.strMeal} />
-                <div className='info'>
-                    <h1>Recipe Detail</h1>
-                    <button>{info.strMeal}</button>
-                    <h3>Instruction's</h3>
-                    <p>{info.strInstructions}</p>
-                </div>
-            </div>
-        )
-    )
+  !info ? (
+    <div className="not-found">Data Not Found</div>
+  ) : (
+    <div className="mealinfo">
+      <img
+        src={info.strMealThumb}
+        alt={info.strMeal}
+        className="info-img"
+      />
+
+      <div className="info flex-1">
+        <h1 className="text-3xl font-bold text-orange-500 mb-4">Recipe Detail</h1>
+
+        <button className="info-btn">
+          {info.strMeal}
+        </button>
+
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">Instructions</h3>
+        <p className="text-gray-700 leading-relaxed text-justify">
+          {info.strInstructions}
+        </p>
+      </div>
+    </div>
+  )
+)
+
 }
 
 export default Mealinfo
