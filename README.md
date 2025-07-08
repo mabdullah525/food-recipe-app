@@ -33,7 +33,7 @@ It allows users to **search for meals**, **view recipe details**, and explore fo
 
 USAGE
 
-nopm starrt
+npm start
 
 -----
 
